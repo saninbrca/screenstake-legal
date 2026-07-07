@@ -125,14 +125,14 @@
   <div class="header">
     <div class="logo">Screen<span>Stake</span></div>
     <h1 class="page-title">Datenschutzerklärung</h1>
-    <div class="last-updated">Stand: Mai 2026 · DSGVO-konform</div>
+    <div class="last-updated">Stand: Juli 2026 · DSGVO-konform</div>
   </div>
 
   <div class="section">
     <div class="section-title">Verantwortlicher</div>
     <p>Sanin Brica, Haselweg 3, 4073 Hitzing, Österreich<br>
     E-Mail: <a href="mailto:sanin.brica@gmail.com">sanin.brica@gmail.com</a><br>
-    Tel: +43 0663 06448447</p>
+    Tel: +43 663 06448447</p>
   </div>
 
   <div class="section">
@@ -155,54 +155,34 @@
       </tr>
       <tr>
         <td><strong>Benutzername</strong></td>
-        <td>Anzeige im Leaderboard, Profil</td>
+        <td>Anzeige im Profil, Nutzeridentifikation</td>
         <td>Art. 6 Abs. 1 lit. b DSGVO (Vertrag)</td>
       </tr>
       <tr>
         <td><strong>Challenge-Daten</strong></td>
-        <td>Nutzungsstatistiken, Streak, Fortschritt</td>
+        <td>Nutzungsstatistiken, Streak, Fortschritt deiner selbst gewählten Ziele</td>
         <td>Art. 6 Abs. 1 lit. b DSGVO (Vertrag)</td>
       </tr>
       <tr>
-        <td><strong>Zahlungsdaten</strong> (via Stripe)</td>
-        <td>Abwicklung von Hard Mode Einsätzen</td>
-        <td>Art. 6 Abs. 1 lit. b DSGVO (Vertrag)</td>
-      </tr>
-      <tr>
-        <td><strong>IBAN</strong> (optional)</td>
-        <td>Auszahlung von Gewinnen</td>
-        <td>Art. 6 Abs. 1 lit. b DSGVO (Vertrag)</td>
-      </tr>
-      <tr>
-        <td><strong>Gerätedaten</strong> (Android ID)</td>
-        <td>Betrugsschutz, Gerätebindung</td>
-        <td>Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse)</td>
-      </tr>
-      <tr>
-        <td><strong>App-Nutzungsdaten</strong></td>
-        <td>Tracking der Challenge-Ziele (lokal)</td>
+        <td><strong>App-Nutzungszähler</strong></td>
+        <td>Zählwerte deiner Challenges (z.&nbsp;B. bewusste Öffnungen, genutzte Zeit); mit deinem Konto synchronisiert</td>
         <td>Art. 6 Abs. 1 lit. b DSGVO (Vertrag)</td>
       </tr>
       <tr>
         <td><strong>Einwilligungsnachweise</strong></td>
-        <td>Nachweis der AGB/Datenschutz-Zustimmung</td>
+        <td>Nachweis der Zustimmung zu AGB, Datenschutz und Altersbestätigung</td>
         <td>Art. 6 Abs. 1 lit. c DSGVO (rechtl. Verpflichtung)</td>
       </tr>
     </table>
-    <div class="highlight">Wir speichern keine Kreditkartendaten. Alle Zahlungsdaten werden ausschließlich von Stripe verarbeitet.</div>
+    <div class="highlight">In dieser Version von ScreenStake werden <strong>keine Zahlungs-, Kreditkarten- oder Bankdaten</strong> erhoben oder verarbeitet.</div>
   </div>
 
   <div class="section">
-    <div class="section-title">Drittanbieter & Datenübertragung</div>
+    <div class="section-title">Drittanbieter &amp; Datenübertragung</div>
     <h2>Firebase (Google Ireland Ltd.)</h2>
     <p>Wir nutzen Firebase Authentication und Firestore für Kontozugänge und Datenspeicherung. Daten können auf Server in der EU und den USA übertragen werden. Grundlage: EU-Standardvertragsklauseln.</p>
     <p>Mit Google wurde ein Auftragsverarbeitungsvertrag (AVV / Data Processing Agreement) gemäß Art. 28 DSGVO abgeschlossen.</p>
     <p>Datenschutz: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></p>
-
-    <h2 style="margin-top: 20px;">Stripe Payments Europe, Ltd.</h2>
-    <p>Zahlungsabwicklung für Hard Mode Einsätze und Gruppenherausforderungen. Stripe verarbeitet Zahlungsdaten gemäß PCI-DSS-Standard. Wir erhalten nur anonymisierte Transaktions-IDs.</p>
-    <p>Mit Stripe wurde ein Auftragsverarbeitungsvertrag (AVV) gemäß Art. 28 DSGVO abgeschlossen.</p>
-    <p>Datenschutz: <a href="https://stripe.com/de/privacy">stripe.com/de/privacy</a></p>
 
     <h2 style="margin-top: 20px;">Sentry (Functional Software, Inc.)</h2>
     <p>Wir nutzen Sentry für Absturzberichte. Es werden nur technische Fehlerdaten und die Firebase UID (kein Name, keine E-Mail) übertragen. Rechtsgrundlage: berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO).</p>
@@ -212,18 +192,17 @@
   <div class="section">
     <div class="section-title">Berechtigungen der App</div>
     <ul>
-      <li><strong>Accessibility Service:</strong> Erkennt geöffnete Apps für das Blocking-System. Daten verlassen das Gerät nicht.</li>
+      <li><strong>Bedienungshilfe-Dienst (Accessibility Service):</strong> Erkennt den Paketnamen der aktuell geöffneten App, um bei einer überwachten App den Erinnerungsbildschirm anzuzeigen. Bei unterstützten Browsern wird zusätzlich die aktuell geöffnete Webadresse ausgelesen — ausschließlich, um sie mit den Sperrlisten abzugleichen, die du selbst eingerichtet hast (eigene blockierte Domains bzw. optionaler Filter für Erwachsenen-Inhalte). Webadressen werden nur im Moment des Abgleichs verarbeitet und sofort verworfen; sie werden <strong>nicht gespeichert, nicht protokolliert und nicht übertragen</strong>. Es werden kein Browserverlauf, keine Tastatureingaben, Passwörter oder Formularinhalte erfasst.</li>
       <li><strong>Overlay-Berechtigung:</strong> Anzeige von Challenge-Overlays über anderen Apps.</li>
-      <li><strong>Nutzungsstatistiken:</strong> Erkennung von App-Nutzung bei deaktiviertem Accessibility Service (Betrugsschutz). Nur für blockierte Apps.</li>
+      <li><strong>Nutzungsstatistiken:</strong> Ermittlung der Nutzungsdauer überwachter Apps, um deine Zeit-Challenges auszuwerten.</li>
     </ul>
-    <div class="highlight">Alle lokalen App-Nutzungsdaten bleiben auf deinem Gerät. Wir übertragen nur die für die Challenge notwendigen Zusammenfassungen (z.B. Anzahl bewusster Öffnungen).</div>
+    <div class="highlight">Die vom Bedienungshilfe-Dienst verarbeiteten Informationen (App-Paketname, Webadressen) bleiben ausschließlich auf deinem Gerät. An dein Konto übertragen werden nur die für deine Challenges notwendigen Zusammenfassungen (z.&nbsp;B. Anzahl bewusster Öffnungen) — niemals besuchte Webadressen oder ein Browserverlauf.</div>
   </div>
 
   <div class="section">
     <div class="section-title">Speicherdauer</div>
-    <p>Deine Daten werden gespeichert solange dein Konto aktiv ist. Nach Kontolöschung werden alle personenbezogenen Daten innerhalb von 30 Tagen gelöscht, ausgenommen:</p>
+    <p>Deine Daten werden gespeichert, solange dein Konto aktiv ist. Nach Kontolöschung werden alle personenbezogenen Daten innerhalb von 30 Tagen gelöscht, ausgenommen:</p>
     <ul>
-      <li>Transaktionsdaten (Aufbewahrungspflicht 7 Jahre gemäß österr. Steuerrecht)</li>
       <li>Einwilligungsnachweise (Aufbewahrung zum Nachweis der Zustimmung)</li>
     </ul>
   </div>
