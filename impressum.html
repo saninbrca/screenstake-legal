@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Allgemeine Geschäftsbedingungen — Finite</title>
+<title>Impressum — Finite</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
 
@@ -14,7 +14,6 @@
     --grey: #8E8E93;
     --card: #F2F2F7;
     --border: rgba(0,0,0,0.08);
-    --red: #FF3B30;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -27,76 +26,91 @@
     padding: 0 20px;
   }
 
-  .container { max-width: 680px; margin: 0 auto; padding-bottom: 80px; }
-
   .header {
     padding: 48px 0 32px;
     border-bottom: 1px solid var(--border);
     margin-bottom: 40px;
   }
 
-  .logo { font-size: 22px; font-weight: 600; margin-bottom: 8px; }
+  .logo {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
   .logo span { color: var(--green); }
-  .page-title { font-size: 32px; font-weight: 600; margin-bottom: 8px; }
-  .last-updated { font-size: 13px; color: var(--grey); }
+
+  .page-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .last-updated {
+    font-size: 13px;
+    color: var(--grey);
+  }
+
+  .container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+  }
 
   .section {
-    margin-bottom: 28px;
+    margin-bottom: 36px;
     padding: 24px;
     background: var(--card);
     border-radius: 16px;
   }
 
-  .section-number {
+  .section-title {
     font-size: 11px;
     font-weight: 600;
-    color: var(--green);
+    color: var(--grey);
     text-transform: uppercase;
     letter-spacing: 0.8px;
-    margin-bottom: 6px;
+    margin-bottom: 16px;
   }
 
-  h2 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 14px;
-    color: var(--black);
-  }
-
-  p { font-size: 15px; color: #333; margin-bottom: 12px; }
-  p:last-child { margin-bottom: 0; }
-
-  ul {
-    font-size: 15px;
-    color: #333;
-    padding-left: 20px;
+  .info-row {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 12px;
   }
 
-  ul li { margin-bottom: 8px; }
-
-  .warning {
-    background: #FFF0EE;
-    border-radius: 10px;
-    padding: 16px;
-    margin-top: 12px;
-    border-left: 3px solid var(--red);
-    font-size: 14px;
-    color: #333;
+  .info-label {
+    font-size: 12px;
+    color: var(--grey);
+    margin-bottom: 2px;
   }
 
-  .highlight {
+  .info-value {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--black);
+  }
+
+  .info-value a {
+    color: var(--green);
+    text-decoration: none;
+  }
+
+  p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 12px;
+  }
+
+  .note {
+    font-size: 13px;
+    color: var(--grey);
+    padding: 16px;
     background: white;
     border-radius: 10px;
-    padding: 16px;
     margin-top: 12px;
     border-left: 3px solid var(--green);
-    font-size: 14px;
-    color: #333;
   }
-
-  strong { font-weight: 600; }
-  a { color: var(--green); text-decoration: none; }
 
   .footer {
     text-align: center;
@@ -111,96 +125,49 @@
 <div class="container">
   <div class="header">
     <div class="logo">Fin<span>ite</span></div>
-    <h1 class="page-title">Allgemeine Geschäftsbedingungen</h1>
+    <h1 class="page-title">Impressum</h1>
     <div class="last-updated">Stand: Juli 2026</div>
   </div>
 
   <div class="section">
-    <div class="section-number">§ 1</div>
-    <h2>Geltungsbereich &amp; Anbieter</h2>
-    <p>Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für die Nutzung der mobilen Anwendung „Finite" (nachfolgend „App"), bereitgestellt von:</p>
-    <p><strong>Sanin Brica</strong><br>
-    Haselweg 3, 4073 Hitzing, Österreich<br>
-    E-Mail: <a href="mailto:sanin.brica@gmail.com">sanin.brica@gmail.com</a></p>
-    <p>Mit der Registrierung akzeptierst du diese AGB vollumfänglich. Die App richtet sich ausschließlich an Personen ab <strong>18 Jahren</strong> mit Wohnsitz in der Europäischen Union.</p>
+    <div class="section-title">Angaben gemäß § 5 ECG (E-Commerce-Gesetz)</div>
+    <div class="info-row">
+      <span class="info-label">Name</span>
+      <span class="info-value">Sanin Brica</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Anschrift</span>
+      <span class="info-value">Haselweg 3, 4073 Hitzing, Österreich</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">E-Mail</span>
+      <span class="info-value"><a href="mailto:sanin.brica@gmail.com">sanin.brica@gmail.com</a></span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Telefon</span>
+      <span class="info-value"><a href="tel:+4366306448447">+43 663 06448447</a></span>
+    </div>
   </div>
 
   <div class="section">
-    <div class="section-number">§ 2</div>
-    <h2>Leistungsbeschreibung</h2>
-    <p>Finite ist eine App zur Reduktion der Bildschirmzeit. Die App bietet streak-basierte Challenges, mit denen du deine Nutzung selbst gewählter Apps begrenzt und deinen Fortschritt verfolgst.</p>
-    <div class="highlight">Finite wird derzeit als <strong>kostenloser Dienst ohne finanzielle Einsätze</strong> bereitgestellt. Der Erfolg einer Challenge hängt ausschließlich vom eigenen Verhalten ab.</div>
+    <div class="section-title">Tätigkeit</div>
+    <p>Sanin Brica stellt die App „Finite" als Privatperson bereit. Die App ist ein digitaler Dienst zur Unterstützung bei der Reduktion der Bildschirmzeit durch zeitlich begrenzte, verhaltensbasierte Challenges.</p>
+    <div class="note">Hinweis: Finite wird derzeit als kostenloser Dienst ohne finanzielle Einsätze bereitgestellt. Bei Aufnahme einer gewerblichen Tätigkeit wird dieses Impressum um die entsprechenden Angaben (Gewerbe, Behörde, ggf. UID) ergänzt.</div>
   </div>
 
   <div class="section">
-    <div class="section-number">§ 3</div>
-    <h2>Registrierung &amp; Konto</h2>
-    <ul>
-      <li>Die Registrierung erfordert eine gültige E-Mail-Adresse, ein sicheres Passwort und einen einzigartigen Benutzernamen.</li>
-      <li>Du musst mindestens <strong>18 Jahre alt</strong> sein.</li>
-      <li>Die E-Mail-Adresse muss verifiziert werden, bevor das Konto genutzt werden kann.</li>
-      <li>Der Benutzername ist <strong>permanent</strong> und kann nach der Wahl nicht mehr geändert werden.</li>
-      <li>Du bist für die Sicherheit deines Kontos verantwortlich.</li>
-      <li>Pro Person ist nur ein Konto erlaubt.</li>
-    </ul>
+    <div class="section-title">Haftungsausschluss</div>
+    <p>Die Inhalte dieser App wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.</p>
+    <p>Finite dient ausschließlich der Verhaltensänderung und Motivation zur Reduktion der Bildschirmzeit.</p>
   </div>
 
   <div class="section">
-    <div class="section-number">§ 4</div>
-    <h2>Challenge-Regeln &amp; Pflichten</h2>
-    <p>Für die Nutzung der App gilt:</p>
-    <ul>
-      <li>Die für die Funktion erforderlichen App-Berechtigungen (Bedienungshilfe-Dienst, Overlay) sind aktiv zu halten. Ohne sie kann die App ihre Kernfunktion nicht bereitstellen.</li>
-      <li>Das Blocking-System darf nicht durch technische Hilfsmittel umgangen werden.</li>
-      <li>Es dürfen keine Mehrfachkonten zur Umgehung von Regeln erstellt werden.</li>
-    </ul>
-    <div class="warning">Bei schwerwiegendem oder wiederholtem Missbrauch behalten wir uns das Recht vor, das betroffene Konto zu sperren.</div>
-  </div>
-
-  <div class="section">
-    <div class="section-number">§ 5</div>
-    <h2>Kündigung &amp; Kontolöschung</h2>
-    <ul>
-      <li>Du kannst dein Konto jederzeit unter Einstellungen → Konto löschen löschen.</li>
-      <li>Mit der Löschung werden deine personenbezogenen Daten gemäß der Datenschutzerklärung entfernt.</li>
-      <li>Wir behalten uns das Recht vor, Konten bei Verdacht auf Missbrauch zu sperren.</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <div class="section-number">§ 6</div>
-    <h2>Haftung</h2>
-    <p>Finite haftet nicht für:</p>
-    <ul>
-      <li>Technische Ausfälle von Drittanbietern (z.&nbsp;B. Firebase)</li>
-      <li>Datenverlust durch Gerätewechsel ohne vorherige Sicherung</li>
-      <li>Schäden durch Manipulation des Betriebssystems oder Drittanbieter-Apps</li>
-      <li>Konsequenzen aus der Nutzung der App (psychologische oder sonstige Auswirkungen)</li>
-    </ul>
-    <p>Die Haftung für Vorsatz und grobe Fahrlässigkeit bleibt unberührt. Da die App unentgeltlich bereitgestellt wird, ist die Haftung im Übrigen auf Vorsatz und grobe Fahrlässigkeit beschränkt.</p>
-  </div>
-
-  <div class="section">
-    <div class="section-number">§ 7</div>
-    <h2>Änderungen der AGB</h2>
-    <p>Wir behalten uns das Recht vor, diese AGB mit einer Frist von <strong>30 Tagen</strong> zu ändern. Du wirst per E-Mail informiert. Wenn du die Änderungen nicht akzeptierst, hast du das Recht, dein Konto vor Inkrafttreten der Änderungen zu löschen.</p>
-  </div>
-
-  <div class="section">
-    <div class="section-number">§ 8</div>
-    <h2>Anwendbares Recht &amp; Gerichtsstand</h2>
-    <p>Es gilt österreichisches Recht unter Ausschluss des UN-Kaufrechts. Gerichtsstand ist Linz, Österreich.</p>
-    <p>Für Verbraucher gilt: Zwingende Verbraucherschutzbestimmungen des Wohnsitzlandes bleiben unberührt.</p>
-  </div>
-
-  <div class="section">
-    <div class="section-number">§ 9</div>
-    <h2>Verbraucherstreitbeilegung</h2>
+    <div class="section-title">Verbraucherstreitbeilegung</div>
     <p>Wir sind nicht bereit und nicht verpflichtet, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
   </div>
 
   <div class="footer">
-    © 2026 Finite · Sanin Brica · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>
+    © 2026 Finite · Sanin Brica · <a href="datenschutz.html">Datenschutz</a> · <a href="agb.html">AGB</a>
   </div>
 </div>
 </body>
